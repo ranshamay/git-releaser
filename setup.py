@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='git_releaser',
-    version='4.0.0',
+    version='4.0.1',
     description='A quick script to commit, handle versionning and generate changelogs',
     long_description=open('README.rst').read(),
     author='Ran Shamay',
