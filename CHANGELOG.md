@@ -2,6 +2,19 @@
 
 
 
+## v14.0.0 (2017-11-21)
+
+
+### Features
+- first integration of changelog and bumpversion (b29e225)
+
+
+
+
+
+
+
+
 ## v13.0.0 (2017-11-21)
 
 
