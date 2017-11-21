@@ -1,7 +1,7 @@
 ==============
 Git Releaser
 ==============
-Version:0.0.2
+Version:1.0.0
 A quick script that will generate a changelog for any git repository using 
 `conventional style` commit messages.
 
