@@ -1,7 +1,7 @@
 ==============
-Auto Changelog
+Git Releaser
 ==============
-Version:68.0.0
+Version:0.0.1
 A quick script that will generate a changelog for any git repository using 
 `conventional style` commit messages.
 
