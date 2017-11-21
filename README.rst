@@ -1,7 +1,7 @@
 ==============
 Auto Changelog
 ==============
-Version:64.0.0
+Version:65.0.0
 A quick script that will generate a changelog for any git repository using 
 `conventional style` commit messages.
 
