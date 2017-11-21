@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='git_releaser',
-    version='61.0.0',
+    version='62.0.0',
     description='A quick script to commit, handle versionning and generate changelogs',
     long_description=open('README.rst').read(),
     author='Ran Shamay',
@@ -12,16 +12,15 @@ setup(
     packages=find_packages(),
 
     package_data={
-        'git_releaser': ['auto-changelog', 'commitizen-py2.7', 'bumpversion'],
+        'git_releaser': ['auto-changelog', 'bumpversion'],
     },
     include_package_data=True,
     entry_points={
-        'console_scripts': ['gr=git_releaser.__main__:main'],
+        'console_scripts': ['git-releaser=git_releaser.__main__:main'],
     },
 
     install_requires=[
         'auto-changelog',
-        'commitizen-py2.7',
         'bumpversion',
     ],
 
