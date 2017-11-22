@@ -1,0 +1,19 @@
+{% macro print_group(tag, group, title,repo_name) %}
+{% if group in tag.groups %}
+### {{ title }}
+{% for commit in tag.groups[group] %}
+- {{ "[" + commit.specific + "] " if commit.specific }}{{ commit.description.strip() }}{{" (["+commit.commit_hash[0:7]+"](https://bitbucket.org/panorays/"+repo_name+"/commits/"+commit.commit_hash[0:7]+"))"}}
+{% endfor %}
+
+{% endif %}
+{% endmacro %}
+
+
+{% macro commit_list_format(tag,repo_name) %}
+{{ print_group(tag, 'fix', 'Bug Fixes',repo_name) }}
+{{ print_group(tag, 'feat', 'Features',repo_name) }}
+{{ print_group(tag, 'refactor', 'Refactoring',repo_name) }}
+{{ print_group(tag, 'perf', 'Performance Enhancements',repo_name) }}
+{{ print_group(tag, 'docs', 'Documentation Changes',repo_name) }}
+{{ print_group(tag, 'chore', 'Administration and Chores',repo_name) }}
+{% endmacro %}

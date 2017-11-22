@@ -1,6 +1,4 @@
 include *.rst
 include *.txt
 include *.md
-include examples/*.md
-recursive-include docs *.rst
-include auto_changelog/templates/*.jinja2
+recursive-include templates *.jinja2
