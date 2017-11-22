@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='git_releaser',
-    version='14.0.0',
+    version='69.0.1',
     description='A quick script to commit, handle versionning and generate changelogs',
     long_description=open('README.rst').read(),
     author='Ran Shamay',
@@ -18,7 +18,7 @@ setup(
     entry_points={
         'console_scripts': ['git-releaser=git_releaser.__main__:main'],
     },
-
+    data_files=[('/tmp/templates', ['templates/base.jinja2', 'templates/tag_format.jinja2'])],
     install_requires=[
         'auto-changelog',
         'bumpversion',
