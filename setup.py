@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='git_releaser',
-    version='69.0.2',
+    version='69.0.3',
     description='A quick script to commit, handle versionning and generate changelogs',
     long_description=open('README.rst').read(),
     author='Ran Shamay',
@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
 
     package_data={
-        'git_releaser': ['auto-changelog', 'bumpversion'],
+        'git_releaser': ['bumpversion==0.5.12','docopt'],
     },
     include_package_data=True,
     entry_points={
