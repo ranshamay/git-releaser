@@ -2,11 +2,41 @@
 
 
 
+## v17.0.0 (2017-11-22)
+
+
+
+
+
+
+
+
+
+## v16.0.0 (2017-11-22)
+
+
+
+
+
+
+
+
+
+## v15.0.0 (2017-11-22)
+
+
+
+
+
+
+
+
+
 ## v14.0.0 (2017-11-21)
 
 
 ### Features
-- first integration of changelog and bumpversion (b29e225)
+- first integration of changelog and bumpversion ([b29e225]([d2f0152](https://bitbucket.org/panorays/company-api/commits/b29e225)))
 
 
 
@@ -249,7 +279,7 @@
 
 
 ### Features
-- feature 2 (ac5a38c)
+- feature 2 ([ac5a38c]([d2f0152](https://bitbucket.org/panorays/company-api/commits/ac5a38c)))
 
 
 
@@ -332,7 +362,7 @@
 
 
 ### Features
-- somefeature (7b8b5fe)
+- somefeature ([7b8b5fe]([d2f0152](https://bitbucket.org/panorays/company-api/commits/7b8b5fe)))
 
 
 
