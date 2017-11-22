@@ -20,8 +20,8 @@ setup(
     },
     data_files=[('/tmp/templates', ['templates/base.jinja2', 'templates/tag_format.jinja2'])],
     install_requires=[
-        'auto-changelog',
-        'bumpversion',
+        'bumpversion==0.5.12',
+        'docopt'
     ],
 
     classifiers=[
