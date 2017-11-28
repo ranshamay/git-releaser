@@ -8,6 +8,7 @@ options:
     -h --help                              Print this help text
     -p --promote [default:patch]           Major,minor or patch version [Default: patch]
     -V --version                           Print the version number
+
 """
 import os
 
@@ -31,7 +32,9 @@ def main():
     changelog_args.append('--repo-name')
     changelog_args.append(repo_name)
     changelog_args.append("--template-dir")
-    changelog_args.append('/tmp/templates')
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    template_dir = os.path.join(BASE_DIR, 'templates')
+    changelog_args.append(template_dir)
     promote_kinds = ['patch', 'major', 'minor']
     next_version_bump_policy = 'patch'
     if args.get('--promote') in promote_kinds:

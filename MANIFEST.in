@@ -1,4 +1,2 @@
-include *.rst
-include *.txt
 include *.md
-recursive-include templates *.jinja2
+graft templates
