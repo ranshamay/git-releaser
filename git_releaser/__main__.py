@@ -10,9 +10,8 @@ options:
     -V --version                           Print the version number
 
 """
-import os
-
 import docopt
+import os
 
 import bumpversion
 from git_releaser import __version__
@@ -39,10 +38,12 @@ def main():
     next_version_bump_policy = 'patch'
     if args.get('--promote') in promote_kinds:
         next_version_bump_policy = args['--promote']
-    bumpversion.main(
-        ['--allow-dirty', '--config-file', CONFIG_FILE_LOCATION, next_version_bump_policy, "--tag", "--commit"],
+    new_version = bumpversion.main(
+        ['--allow-dirty', '--config-file', CONFIG_FILE_LOCATION, next_version_bump_policy, "--tag",
+         "--commit"],
         changelog_args)
     print """type `git push --tags origin master` to push all changes to git"""
+    return new_version
 
 
 if __name__ == "__main__":
